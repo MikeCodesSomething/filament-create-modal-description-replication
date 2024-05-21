@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('sheets', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('sheet');
+            $table->string('sheet')->nullable();
             $table->timestamps();
         });
     }
